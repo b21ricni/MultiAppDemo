@@ -15,19 +15,19 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onPostResume() {
         super.onPostResume();
-        Log.d("==>","Activity PostResume");
+        Log.d("==>","Main Activity PostResumed");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d("==>","Activity STARTO");
+        Log.d("==>","Main Activity Started");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d("==>","Activity STAPH");
+        Log.d("==>","Main Activity Stopped");
     }
 
     @Override
