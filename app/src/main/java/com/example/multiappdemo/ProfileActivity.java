@@ -7,10 +7,12 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class ProfileActivity extends AppCompatActivity {
 
     private Button singout;
+    private TextView username_view;
 
     public ProfileActivity() {
         super();
@@ -46,12 +48,15 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         Log.d("==>","CreatePA");
         singout = findViewById(R.id.SignOutButton);
+        username_view = findViewById(R.id.ProfileUsername);
 
         Intent intent = getIntent();
         Bundle extras = intent.getExtras();
 
         String username = extras.getString("username");
         Log.d("==>","username from intent:" + username);
+
+        username_view.setText(username);
 
         singout.setOnClickListener(new View.OnClickListener() {
             @Override
