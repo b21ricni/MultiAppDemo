@@ -53,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 Log.d("==>","You have logged in");
                 Log.d("==>","username:"+username.getText().toString());
                 Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+                intent.putExtra("username",username.getText().toString());
                 startActivity(intent);
             }
         });

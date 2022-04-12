@@ -2,6 +2,7 @@ package com.example.multiappdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -45,6 +46,12 @@ public class ProfileActivity extends AppCompatActivity {
         setContentView(R.layout.activity_profile);
         Log.d("==>","CreatePA");
         singout = findViewById(R.id.SignOutButton);
+
+        Intent intent = getIntent();
+        Bundle extras = intent.getExtras();
+
+        String username = extras.getString("username");
+        Log.d("==>","username from intent:" + username);
 
         singout.setOnClickListener(new View.OnClickListener() {
             @Override
