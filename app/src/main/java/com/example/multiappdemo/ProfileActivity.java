@@ -50,6 +50,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("==>","Sign out pressed");
+                finish();
             }
         });
     }
