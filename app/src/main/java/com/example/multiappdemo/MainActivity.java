@@ -2,6 +2,7 @@ package com.example.multiappdemo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -46,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Log.d("==>","You have logged in");
+                Intent intent = new Intent(MainActivity.this,ProfileActivity.class);
+                startActivity(intent);
             }
         });
 
