@@ -20,7 +20,8 @@
         android:id="@+id/SignOutButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
         android:text="Logg out"
         app:layout_constraintTop_toBottomOf="@+id/ProfileLabel"
-        />
+        tools:layout_editor_absoluteX="153dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
